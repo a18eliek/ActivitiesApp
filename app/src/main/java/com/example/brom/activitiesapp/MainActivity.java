@@ -26,5 +26,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("brom", "onStop() called.");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("brom", "onStart() called.");
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+        Log.d("brom", "onCreate() called.");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("brom", "onPause() called.");
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("brom", "onPause() called.");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("brom", "onDestroy() called.");
     }
 }
