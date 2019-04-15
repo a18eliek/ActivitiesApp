@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.brom.activitiesapp.MountainDetailsActivity"
+    tools:showIn="@layout/activity_mountaindetails">
+
+    <TextView
+        android:id="@+id/MOUNTAIN_NAME"
+        android:layout_width="match_parent"
+
+        android:layout_height="66dp"
+        android:textAlignment="center"
+        android:textSize="150px" />
+
+    <TextView
+        android:id="@+id/MOUNTAIN_LOCATION"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="100px" />
+
+    <TextView
+        android:id="@+id/MOUNTAIN_HEIGHT"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textSize="75px" />
+
+    <ImageView
+        android:id="@+id/MountainImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/MOUNTAIN_LICENCE"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="50px" />
+
+</LinearLayout>
